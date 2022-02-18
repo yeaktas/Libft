@@ -1,29 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strchrc.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/13 13:43:10 by yaktas            #+#    #+#             */
-/*   Updated: 2022/02/18 18:08:53 by yaktas           ###   ########.fr       */
+/*   Created: 2022/02/18 11:53:15 by yaktas            #+#    #+#             */
+/*   Updated: 2022/02/18 18:32:17 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//alfabetik karakterse 1 degilse 0 ceviriyor.
-int	ft_isalpha(int c)
+
+char	*ft_strchr(const char *s, int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	return (0);
+	int	s_len;
+
+	s_len = ft_strlen(s);
+	while (s_len >= 0)
+	{
+		if (*s == (char)c)
+			return ((char *)s);
+		s++;
+		s_len--;
+	}
+	return (NULL);
 }
 /*
 int	main(void)
 {
-	char	c;
+	char	a[] = "aktas";
 
-	c = 'a';
-	printf("%d", ft_isalpha(c));
-	return (0);
-}*/
+	printf("%s", ft_strchr(a, 't'));
+}
+*/
