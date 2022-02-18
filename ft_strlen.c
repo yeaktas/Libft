@@ -6,12 +6,12 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 13:06:48 by yaktas            #+#    #+#             */
-/*   Updated: 2022/02/16 16:27:14 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/02/18 17:45:27 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//girilen kelimenin harfini sayıyıyor
+//girilen kelimenin harfini sayiyor.
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;
