@@ -6,12 +6,12 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/13 16:06:21 by yaktas            #+#    #+#             */
-/*   Updated: 2022/02/13 16:10:44 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/02/18 17:45:03 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//yazdırılabilir karakterlerin kontrolü.
+//yazdırılabilir karakterlerin kontrolu.
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
