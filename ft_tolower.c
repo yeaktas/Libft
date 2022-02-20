@@ -6,13 +6,13 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/13 16:33:21 by yaktas            #+#    #+#             */
-/*   Updated: 2022/02/13 16:34:23 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/02/20 15:33:39 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //buyuk harfi kucuge cevirir.
-int	ft_toupper(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)
 		return (c + 32);
