@@ -6,12 +6,12 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 11:53:15 by yaktas            #+#    #+#             */
-/*   Updated: 2022/02/20 15:25:30 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/02/21 19:20:33 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//
 char	*ft_strchr(const char *s, int c)
 {
 	int	s_len;
