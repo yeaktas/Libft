@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/13 16:06:21 by yaktas            #+#    #+#             */
-/*   Updated: 2022/02/25 14:30:24 by yaktas           ###   ########.fr       */
+/*   Created: 2022/02/25 16:53:58 by yaktas            #+#    #+#             */
+/*   Updated: 2022/02/25 18:40:44 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//yazdırılabilir karakterlerin kontrolu.
-int	ft_isprint(int c)
+
+size_t ft_strlcat(char *dst, const char *src, size_t size)
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	return (0);
+	size_t	d;
+	size_t	s;
+	size_t	dlen;
+	size_t	slen;
+
+	dlen = ft_strlen(d);
+	slen = ft_strlen(d);
+	
 }

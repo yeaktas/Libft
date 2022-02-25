@@ -1,20 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/13 16:06:21 by yaktas            #+#    #+#             */
-/*   Updated: 2022/02/25 14:30:24 by yaktas           ###   ########.fr       */
+/*   Created: 2022/02/25 16:21:59 by yaktas            #+#    #+#             */
+/*   Updated: 2022/02/25 16:52:46 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//yazdırılabilir karakterlerin kontrolu.
-int	ft_isprint(int c)
+//sourcedan destinationa n kadar kopyalar. sourceun uzunlugunu retrun eder.
+size_t	ft_strlcpy(char *dst, const char *src, size_t n)
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	return (0);
+	int	i;
+
+	i = 0;
+	if (n > 0)
+	{
+		while (src[i] && i < (n - 1))
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = 0;
+	}
+	while (src[i])
+		i++;
+	return (i);
 }
+
+/* int	main(void)
+{
+	char 	a[] = "ahmet";
+	char	b[] = "mehmet";
+
+	printf("%zu", ft_strlcpy(a, b, 4));
+} */
