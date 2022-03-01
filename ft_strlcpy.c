@@ -6,12 +6,12 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 16:21:59 by yaktas            #+#    #+#             */
-/*   Updated: 2022/02/25 16:52:46 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/03/01 12:58:06 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//sourcedan destinationa n kadar kopyalar. sourceun uzunlugunu retrun eder.
+//sourcedan destinationa n kadar kopyalar. sourceun uzunlugunu return eder.
 size_t	ft_strlcpy(char *dst, const char *src, size_t n)
 {
 	int	i;
