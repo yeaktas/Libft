@@ -6,7 +6,7 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 13:37:27 by yaktas            #+#    #+#             */
-/*   Updated: 2022/03/02 01:49:51 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/03/02 02:20:49 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,6 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *s1, const char *s2, size_t	n);
+
+void	*ft_memset(void *s, int c, size_t n);
 #endif
