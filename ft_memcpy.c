@@ -6,7 +6,7 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 20:08:50 by aktas             #+#    #+#             */
-/*   Updated: 2022/03/04 12:24:49 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/03/04 14:09:50 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,9 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 /* int main()
 {
-	char	a[] = "yunushyhyhs";
-	char	b[] = "emreaktas";
+	char	a[] = "bilgisayar";
+	char	b[] = "lgisayar";
 
 	printf("%s", ft_memcpy(a, b, 3));
 
-}
- */
+} */
