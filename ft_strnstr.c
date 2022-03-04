@@ -6,12 +6,12 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 01:48:33 by yaktas            #+#    #+#             */
-/*   Updated: 2022/03/02 02:03:30 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/03/04 18:33:26 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//s2 yi s1 de arar ve buldugunda devamını return eder.
+//s2 yi s1 de arar ve buldugunda devamini return eder.
 char	*ft_strnstr(const char *s1, const char *s2, size_t	n)
 {
 	size_t	i;

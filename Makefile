@@ -6,7 +6,7 @@
 #    By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/16 11:35:03 by yaktas            #+#    #+#              #
-#    Updated: 2022/02/21 11:39:06 by yaktas           ###   ########.fr        #
+#    Updated: 2022/03/04 14:57:58 by yaktas           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,8 @@ OBJ = $(SRC:.c=.o)
 BSRC	= $(wildcard ft_lst*.c)
 B_OBJ	= $(BSRC:.c=.o)
 
-%.o: %.c
-	$(CC) $(FLAGS) -c $< -o $@
+#%.o: %.c
+#	$(CC) $(FLAGS) -c $< -o $@
 
 $(NAME): $(OBJ)
 		ar -rc $(NAME) $(OBJ)

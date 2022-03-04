@@ -6,12 +6,13 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 11:53:15 by yaktas            #+#    #+#             */
-/*   Updated: 2022/02/25 12:46:32 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/03/04 18:31:56 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//girilen karakterin ilk gectigi yeri arar.
+//girilen karakteri dizi icinde arar.
+//ilk gectigi yeri dondurur.
 char	*ft_strchr(const char *s, int c)
 {
 	int	s_len;
@@ -26,10 +27,10 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (NULL);
 }
-/*
-int	main(void)
+
+/* int	main(void)
 {
-	char	a[] = "aktastaa";
+	char	a[] = "akta\0staa";
 
 	printf("%s", ft_strchr(a, 't'));
-}*/
+} */

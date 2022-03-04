@@ -6,12 +6,12 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 16:53:58 by yaktas            #+#    #+#             */
-/*   Updated: 2022/03/02 01:46:00 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/03/04 16:20:42 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//deste srcyi ekler, return olarak, dest ve src uzunlugu toplanır dondurulur.
+//deste srcyi ekler, return olarak, dest ve src uzunlugu toplanir dondurulur.
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;
@@ -23,18 +23,15 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	slen = ft_strlen(src);
 	i = 0;
 	j = dlen;
-	if (dlen < size - 1 && size > 0)
+	if (size == 0 || size <= dlen)
+		return (slen + size);
+	while (src[i] && i < size - dlen - 1)
 	{
-		while (src[i] != '\0' && dlen + i < size - 1)
-		{
-			dst[j] = src[i];
-			j++;
-			i++;
-		}
-		dst[j] = '\0';
+		dst[j] = src[i];
+		i++;
+		j++;
 	}
-	if (dlen >= size)
-		dlen = size;
+		dst[j] = '\0';
 	return (dlen + slen);
 }
 /* int	main(void)

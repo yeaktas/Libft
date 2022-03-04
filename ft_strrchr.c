@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aktas <aktas@student.42.fr>                +#+  +:+       +#+        */
+/*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 12:49:21 by yaktas            #+#    #+#             */
-/*   Updated: 2022/03/03 22:34:53 by aktas            ###   ########.fr       */
+/*   Updated: 2022/03/04 17:55:36 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//girilen karakterin son gectigi yeri arar.
+//girilen karakteri dizi icinde arar.
+//son gectigi yeri dondurur.
 char	*ft_strrchr(const char *s, int c)
 {
 	int	s_len;
