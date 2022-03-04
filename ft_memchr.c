@@ -6,7 +6,7 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/04 14:32:42 by yaktas            #+#    #+#             */
-/*   Updated: 2022/03/04 18:40:20 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/03/04 19:00:51 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	a[] = "ahmet";
 
 	printf("%s", ft_memchr(a, 'm', 3));
-}
+} */
