@@ -6,7 +6,7 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 01:48:33 by yaktas            #+#    #+#             */
-/*   Updated: 2022/03/04 18:33:26 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/03/06 16:41:39 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t	n)
 
 /* int	main(void)
 {
-	char a[] = "merhabadünya sdfds";
+	char a[] = "merhabadunya sdfds";
 	char b[] = "ba";
 
 	printf("%s", ft_strnstr(a, b, 7));

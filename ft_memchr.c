@@ -6,12 +6,12 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/04 14:32:42 by yaktas            #+#    #+#             */
-/*   Updated: 2022/03/04 19:00:51 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/03/06 16:28:06 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//
+//snin icinde n kadar c arar. buldugunda bellek adresini geri dondurur.
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	int		i;
@@ -32,5 +32,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 {
 	char	a[] = "ahmet";
 
-	printf("%s", ft_memchr(a, 'm', 3));
+	printf("%p", ft_memchr(a, 'm', 3));
 } */
