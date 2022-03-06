@@ -6,11 +6,12 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/04 12:28:15 by yaktas            #+#    #+#             */
-/*   Updated: 2022/03/04 14:51:16 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/03/06 18:50:46 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//
 //s nin adresi d den kucuk oldugunda,
 //overleap sorunu olmamasi icin sondan baslanir.
 void	*ft_memmove(void *dest, const void *src, size_t len)
