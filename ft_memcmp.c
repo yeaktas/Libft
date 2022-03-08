@@ -32,7 +32,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (st1[i] - st2[i]);
 }
-
+sdfsdf
 /*int	main(void)
 {
 	char	a[] = "bilgisayar";
