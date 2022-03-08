@@ -33,9 +33,9 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (st1[i] - st2[i]);
 }
 
-int	main()
+/*int	main(void)
 {
-	char a[] = "bilgisayar";
-	char b[] = "bilgiler";
+	char	a[] = "bilgisayar";
+	char	b[] = "bilgiler";
 	printf("%d\n", ft_memcmp(a, b, 6));
-}
+}*/
