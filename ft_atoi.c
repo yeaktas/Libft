@@ -44,4 +44,4 @@ int	ft_atoi(const char *str)
 	char	a[] = "   	-1234";
 
 	printf("%d", ft_atoi(a));
-}
+} */
