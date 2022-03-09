@@ -41,5 +41,5 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	char d[] = "yunus";
 	char s[] = "talha";
 
-	printf("%s", ft_memmove(d, s, 3));
+	printf("%s", ft_memmove(d, d+2, 4));
 } */

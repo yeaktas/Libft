@@ -35,10 +35,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[j] = '\0';
 	return (dlen + slen);
 }
-/* int	main(void)
+
+/* int	main(void) 
 {
 	char d[] = "yunus";
 	char s[] = "emre";
 
-	printf("%zu", ft_strlcat(d, s, 6));
+	printf("%zu", ft_strlcat(d, s, 4));
 } */
