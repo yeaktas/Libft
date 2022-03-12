@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aktas <aktas@student.42.fr>                +#+  +:+       +#+        */
+/*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 13:37:27 by yaktas            #+#    #+#             */
-/*   Updated: 2022/03/07 22:45:36 by aktas            ###   ########.fr       */
+/*   Created: 2022/03/12 18:32:28 by yaktas            #+#    #+#             */
+/*   Updated: 2022/03/12 18:32:28 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
+//if not defined
+//define = bir sabit ya da macro tanimlar.
 # include <stdio.h>
 # include <unistd.h>
 # include <stdlib.h>
@@ -36,6 +37,12 @@ int		ft_atoi(const char *str);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *s1, const char *s2, size_t	n);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
+
 
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);

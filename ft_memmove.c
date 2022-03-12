@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//
 //s nin adresi d den kucuk oldugunda,
 //overleap sorunu olmamasi icin sondan baslanir.
 void	*ft_memmove(void *dest, const void *src, size_t len)

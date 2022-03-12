@@ -1,29 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/12 18:30:48 by yaktas            #+#    #+#             */
-/*   Updated: 2022/03/12 18:30:48 by yaktas           ###   ########.fr       */
+/*   Created: 2022/03/12 18:32:00 by yaktas            #+#    #+#             */
+/*   Updated: 2022/03/12 18:32:00 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//sayi ve harf kontrolu.
-int	ft_isalnum(int c)
+//girilen dizi starttan len e kadar yazdirilir.
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')
-		|| (c >= '0' && c <= '9'))
-		return (1);
-	return (0);
-}
-/*
-int	main(void)
-{
-	char	c;
+	char	*a;
+	size_t	i;
+	size_t	l;
 
-	c = '.';
-	printf("%d", ft_isalnum(c));
-}*/
+	a = (char *)malloc(len + 1);
+	if (!s || !a)
+		return (0);
+	i = start;
+	l = 0;
+	while (i < ft_strlen(s) && l < len)
+		a[l++] = s[i++];
+	a[l] = '\0';
+	return (a);
+}
+	/* int main(void)
+	{
+		char a[] = "giresun";
+		printf("%s", ft_substr(a, 3, 3));
+	}*/

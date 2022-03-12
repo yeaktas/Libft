@@ -30,6 +30,7 @@ all: $(NAME)
 
 bonus: $(OBJ) $(B_OBJ)
 	ar -rc $(NAME) $(OBJ) $(B_OBJ)
+
 clean: 
 	rm -f *.o
 
