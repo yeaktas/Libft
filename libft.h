@@ -51,4 +51,9 @@ void	*ft_memmove(void *dest, const void *src, size_t len);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*calloc(size_t num, size_t size);
 void	*ft_calloc(size_t nmemb, size_t size);
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_putchar_fd(char c, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 #endif
