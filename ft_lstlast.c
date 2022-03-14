@@ -10,3 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+//lstnin son degeri doner.
+t_list	*ft_lstlast(t_list *lst)
+{
+	t_list	*ptr;
+
+	ptr = lst;
+	if (!ptr)
+		return (0);
+	while (ptr->next)
+		ptr = ptr->next;
+	return (ptr);
+}
