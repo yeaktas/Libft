@@ -17,11 +17,8 @@ FLAGS = -Wall -Wextra -Werror
 SRC = $(shell find . -type f ! -name "ft_lst*.c" -name "ft_*.c")
 
 OBJ = $(SRC:.c=.o)
-BSRC	= $(wildcard ft_lst*.c)
+BSRC	= $(shell find . -type f -name "ft_lst*.c")
 B_OBJ	= $(BSRC:.c=.o)
-
-#%.o: %.c
-#	$(CC) $(FLAGS) -c $< -o $@
 
 $(NAME): $(OBJ)
 		ar -rc $(NAME) $(OBJ)
@@ -30,7 +27,6 @@ all: $(NAME)
 
 bonus: $(OBJ) $(B_OBJ)
 	ar -rc $(NAME) $(OBJ) $(B_OBJ)
-
 clean: 
 	rm -f *.o
 
@@ -39,9 +35,9 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all bonus clean fclean re
-
 git:
 	git add .
 	git commit -m "$m"
 	git push
+
+.PHONY: all bonus clean fclean re git

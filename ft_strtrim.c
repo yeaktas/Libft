@@ -50,8 +50,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (str);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char a[] = "badana";
 	printf("%s", ft_strtrim(a, "ab"));
 }
+ */

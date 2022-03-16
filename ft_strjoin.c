@@ -27,7 +27,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	while (s1[i])
 	{
-		m[i++] = s1[i];
+		m[i] = s1[i];
+		i++;
 	}
 	while (s2[j])
 		m[i++] = s2[j++];
@@ -35,9 +36,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (m);
 }
 
-/*int	main(void)
+/* int	main(void)
 {
 	char	a[] = "yunus";
 	char	b[] = "emre";
 	printf("%s", ft_strjoin(a, b));
-}*/
+} */
