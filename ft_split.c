@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//
 unsigned int	str_word_count(const char *s, char d)
 {
 	unsigned int	i;
