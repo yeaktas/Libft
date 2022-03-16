@@ -11,7 +11,9 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//2 lstin contentine fonksiyonu uyguluyor.
+//2 contencti newe atadi.
+//hata ile karsilasirsa null yolla
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void *))
 {
 	t_list	*first;

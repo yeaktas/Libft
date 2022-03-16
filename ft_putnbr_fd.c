@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//girilen inti fdye yazar.
 void	ft_putnbr_fd(int n, int fd)
 {
 	long	nb;

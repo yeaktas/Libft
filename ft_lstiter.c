@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//f fonksiyonunu listenin tum elemanlarina uygular.
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!f)

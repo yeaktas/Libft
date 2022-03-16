@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//stringi fdnin icine yazar.
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (!s)

@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//lstin contentini temizler ve serbest birakir.
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!lst)

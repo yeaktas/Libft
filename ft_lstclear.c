@@ -11,19 +11,18 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//elemani siler.
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list	*ptr;
+	t_list	*temp;
 
-	ptr = *lst;
-	while (ptr)
+	if (!*lst)
+		return ;
+	while (*lst)
 	{
-		ptr = ptr->next;
-		if ((*lst)->next != NULL)
-			(*lst)->next = NULL;
-		ft_lstdelone(*lst, del);
-		*lst = ptr;
+		temp = (*lst)->next;
+		del((*lst)->content);
+		free(*lst);
+		*lst = temp;
 	}
-	free(ptr);
 }
