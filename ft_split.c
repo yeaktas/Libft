@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-unsigned int	str_in_array(const char *s, char d)
+unsigned int	str_word_count(const char *s, char d)
 {
 	unsigned int	i;
 
@@ -39,10 +39,10 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	m = (char **) ft_calloc(str_in_array(s, c) + 1, sizeof(char *));
+	m = (char **) ft_calloc(str_word_count(s, c) + 1, sizeof(char *));
 	if (!m)
 		return (NULL);
-	a = -1;
+	a = 0;
 	while (*s)
 	{
 		if (*s == c)
@@ -52,8 +52,8 @@ char	**ft_split(char const *s, char c)
 			j = 0;
 			while (*s != c && *s && ++j)
 				s++;
-			m[++a] = (char *) ft_calloc(j + 1, sizeof(char));
-			ft_strlcpy(m[a], s - j, j + 1);
+			m[++a - 1] = (char *) ft_calloc(j + 1, sizeof(char));
+			ft_strlcpy(m[a - 1], s - j, j + 1);
 		}
 	}
 	return (m);
@@ -62,7 +62,7 @@ char	**ft_split(char const *s, char c)
 /* int	main(void)
 {
 	    char **a;
-        a = ft_split("marhaba.selamlar.oye", '.');
+        a = ft_split("merhaba.selamlar.oye", '.');
         printf("%s\n",a[0]);
         printf("%s\n",a[1]);
         printf("%s",a[2]);
