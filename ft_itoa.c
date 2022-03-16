@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//int to string
+//int to string.
 static int	ft_lennmb(int n, int sign)
 {
 	int	i;
