@@ -11,15 +11,15 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//bastan ve sondan girilen karakteri kontrol edip keser.
 static int	ft_checkset(char c, char const *set)
 {
-	size_t	index;
+	size_t	i;
 
-	index = 0;
-	while (set[index])
+	i = 0;
+	while (set[i])
 	{
-		if (set[index++] == c)
+		if (set[i++] == c)
 			return (1);
 	}
 	return (0);
@@ -27,10 +27,10 @@ static int	ft_checkset(char c, char const *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*str;
+	char	*m;
 	size_t	start;
 	size_t	end;
-	size_t	index;
+	size_t	i;
 
 	if (!s1 || !set)
 		return (NULL);
@@ -40,14 +40,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 		start++;
 	while (end > start && ft_checkset(s1[end - 1], set))
 		end--;
-	str = (char *)malloc(sizeof(char) * (end - start) + 1);
-	if (!str)
+	m = (char *)malloc(sizeof(char) * (end - start) + 1);
+	if (!m)
 		return (NULL);
-	index = 0;
+	i = 0;
 	while (start < end)
-		str[index++] = s1[start++];
-	str[index] = '\0';
-	return (str);
+		m[i++] = s1[start++];
+	m[i] = '\0';
+	return (m);
 }
 
 /* int	main(void)

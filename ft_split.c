@@ -11,7 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//
+//dizi icinde gonderilen kelimeleri ayirir
+//farkli bir pointere atar.
 unsigned int	str_word_count(const char *s, char d)
 {
 	unsigned int	i;
