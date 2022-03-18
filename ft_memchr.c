@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/04 14:32:42 by yaktas            #+#    #+#             */
-/*   Updated: 2022/03/06 16:28:06 by yaktas           ###   ########.fr       */
+/*   Created: 2022/03/18 12:12:36 by yaktas            #+#    #+#             */
+/*   Updated: 2022/03/18 12:12:36 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,21 @@
 //snin icinde n kadar c arar. buldugunda bellek adresini geri dondurur.
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int		i;
-	char	*str;
+	unsigned char	*str;
+	int				i;
 
-	str = (char *)s;
 	i = 0;
-	while (n--)
+	str = (unsigned char *)s;
+	if (n == 0)
+		return (0);
+	while (n-- > 0)
 	{
-		if (str[i] == c)
-			return ((char *)s + i);
+		if (str[i] == (unsigned char)c)
+			return ((void *)s + i);
 		i++;
 	}
+	if (c == '\0')
+		return ((void *)s + i);
 	return (NULL);
 }
 

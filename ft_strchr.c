@@ -13,6 +13,7 @@
 #include "libft.h"
 //girilen karakteri dizi icinde arar.
 //ilk gectigi yeri dondurur.
+//
 char	*ft_strchr(const char *s, int c)
 {
 	int	s_len;
@@ -30,7 +31,7 @@ char	*ft_strchr(const char *s, int c)
 
 /* int	main(void)
 {
-	char	a[] = "akta\0staa";
+	char	a[] = "akfdeeftastaa";
 
 	printf("%s", ft_strchr(a, 't'));
 } */
