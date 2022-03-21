@@ -38,6 +38,6 @@ re: fclean all
 git:
 	git add .
 	git commit -m "$m"
-	git push
+	git push git@github.com:yeaktas/libft.git
 
 .PHONY: all bonus clean fclean re git
