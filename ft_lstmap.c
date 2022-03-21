@@ -11,7 +11,9 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//lstin tum contentlerine fonksiyonu uyguluyor.
+//lstin tum contentlerine fonksiyonu uygulayip
+//yeni node olusturuyor.
+//olusturulan nodelari first listesine ekliyor.
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void *))
 {
 	t_list	*first;

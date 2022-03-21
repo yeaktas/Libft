@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//newin next elemani lstnin icine atanir.
-//lstnin asil degeri new olur.
+//newi listenin basina ekler.
+//lstnin ilk gosterdigi yapi new yapisi olur.
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	new->next = *lst;

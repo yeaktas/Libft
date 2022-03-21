@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//yeni bir node olusturuyor.
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*new;

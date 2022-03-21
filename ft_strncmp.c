@@ -26,10 +26,10 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 
-/* int	main(void)
+/*int	main(void)
 {
-	char a[] = "erdem";
-	char b[] = "eryunus";
+	char a[] = "bilgisayar";
+	char b[] = "bilgiler";
 
-	printf("%d", ft_strncmp(a, b, 5));
-} */
+	printf("%d", ft_strncmp(a, b, 6));
+}*/
